@@ -1,7 +1,5 @@
 Weather App (instructions on how to compile and run the application)
 
-
-
 Three modules here 
 
 1.commons (parent module)
@@ -10,9 +8,7 @@ Three modules here
 
 3.producer (child)
 
-
-
-Required Software installation for execution.
+for execution follow the steps:
 
 1.Open Weather App as Maven Project
 2.Create Database in PostgreSQL
@@ -27,8 +23,10 @@ Note:
 consumer is running on 9090 port (you can change in application.properties)
 
 producer is running on 8080 port (you can change in application.properties)
+
 ------------------------------------------------------------------------------------
 ================Problem Statement======================
+
 There is an XML weather API accessible at http://www.ilmateenistus.ee/ilma_andmed/xml/forecast.php?lang=eng
 
 Build a Spring-Boot application consisting of at least two Maven modules.
