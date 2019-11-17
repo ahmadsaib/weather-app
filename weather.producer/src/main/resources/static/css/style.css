@@ -1,0 +1,24 @@
+h1 {
+	text-align: center;
+}
+
+.body {
+	background: lightgray;
+}
+
+span {
+	font-size: 17px;
+}
+
+textarea {
+	resize: none;
+}
+
+.submit-button {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#emailSelector{
+	padding: 10px;
+}

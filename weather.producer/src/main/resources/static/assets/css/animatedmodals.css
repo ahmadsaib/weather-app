@@ -1,0 +1,725 @@
+#callnowmodal {
+  position: fixed;
+  /* display: table; */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1040;
+}
+#callnowmodal.callmodalopen {
+  transform: scaleY(0.01) scaleX(0);
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#callnowmodal.callmodalopen .modal-background .modal {
+  transform: scale(0);
+  animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#callnowmodal.callmodalopen.out {
+  transform: scale(1);
+  animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#callnowmodal.
+.out .modal-background .modal {
+  animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+
+
+#callnowmodal .modal-background {
+  /* display: table-cell; */
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+#callnowmodal .modal-background .modal {
+  background: white;
+  padding: 30px;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 300;
+  top: 40%;
+  position: relative;
+  max-width: 90%;
+  height: auto;
+  min-width: 40%;
+  min-height: 30%;
+}
+#callnowmodal .modal-background .modal h2 {
+  font-size: 31px;
+  line-height: 25px;
+  padding: 0px 0 20px;
+  margin-bottom: 15px;
+  color: #fcb301;
+  font-family: proximanovabold;
+}
+.modalclose {
+    text-align: right;
+    cursor: pointer;
+}
+#callnowmodal .modal-background .modal p {
+  font-size: 41px;
+  line-height: 22px;
+  color: #393939;
+  font-family: proximanovabold;
+}
+#callnowmodal .modal-background .modal .modal-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+#callnowmodal .modal-background .modal .modal-svg rect {
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 778;
+  stroke-dashoffset: 778;
+}
+.content {
+  min-height: 100%;
+  height: 100%;
+  background: white;
+  position: relative;
+  z-index: 0;
+}
+.content.signinsoc{
+  background: transparent;
+}
+.content h1 {
+  padding: 75px 0 30px 0;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+}
+.content .buttoncallnow {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+.content .buttoncallnow .buttoncallmodal {
+  /* display: inline-block; */
+  /* text-align: center; */
+  /* padding: 0px 0px; */
+  /* margin: 10px 0 0; */
+  /* background: red; */
+  /* font-size: 18px; */
+  /* background-color: transparent; */
+  /* border-radius: 3px; */
+  /* box-shadow: unset; */
+  /* cursor: pointer; */
+}
+.content .buttoncallnow .buttoncallmodal:hover {
+  color: white;
+  background: transparent;
+}
+
+/*Other Clinic locations modal*/
+
+#locationmodal {
+  position: fixed;
+  /* display: table; */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1040;
+}
+#locationmodal.locationmodalopen {
+  transform: scaleY(0.01) scaleX(0);
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#locationmodal.locationmodalopen .modal-background .modal {
+  transform: scale(0);
+  animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#locationmodal.locationmodalopen.out {
+  transform: scale(1);
+  animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#locationmodal.out .modal-background .modal {
+  animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+
+#locationmodal .modal-background {
+  /* display: table-cell; */
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+/*#locationmodal .modal-background .modal {
+  background: white;
+  padding: 30px;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 300;
+  top: 3%;
+  position: relative;
+  max-width: 90%;
+  height: auto;
+  min-width: 40%;
+  width: 85%;
+  min-height: 30%;
+}*/
+#locationmodal .modal-background .modal {
+  background: white;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 300;
+  top: 2%;
+  position: relative;
+  max-width: 95%;
+  height: 96%;
+  min-width: 40%;
+  width: 95%;
+  overflow-y: scroll;
+  min-height: 40%;
+}
+#locationmodal .modal-background .modal h2 {
+  font-size: 31px;
+  line-height: 25px;
+  padding: 0px 0 20px;
+  margin-bottom: 15px;
+  color: #fcb301;
+  font-family: proximanovabold;
+}
+.modalclose {
+    text-align: right;
+    cursor: pointer;
+}
+#locationmodal .modal-background .modal p {
+  font-size: 41px;
+  line-height: 22px;
+  color: #393939;
+  font-family: proximanovabold;
+}
+#locationmodal .modal-background .modal .modal-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+#locationmodal .modal-background .modal .modal-svg rect {
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 778;
+  stroke-dashoffset: 778;
+}
+
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 6, 2018, 4:51:09 PM
+    Author     : Ahmed Saib
+*/
+
+
+#directionmodal {
+  position: fixed;
+  display: inline-block;
+  cursor: pointer; 
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1040;
+}
+.buttondirmodal{
+  margin-left:5%;
+  
+   display: inline-block;
+   height: 20px;
+  cursor: pointer;    
+  
+}
+#directionmodal.directionmodalopen {
+  transform: scaleY(0.01) scaleX(0);
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#directionmodal.directionmodalopen .modal-background .modal {
+  transform: scale(0);
+  animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#directionmodal.directionmodalopen.out {
+  transform: scale(1);
+  animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#directionmodal.out .modal-background .modal {
+  animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+
+#directionmodal .modal-background {
+  /* display: table-cell; */
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+/*#directionmodal .modal-background .modal {
+  background: white;
+  padding: 30px;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 300;
+  top: 3%;
+  position: relative;
+  max-width: 90%;
+  height: auto;
+  min-width: 40%;
+  width: 85%;
+  min-height: 30%;
+}*/
+#directionmodal .modal-background .modal {
+  background: white;
+  padding: 15px;
+  display: inline-block;
+
+  border-radius: 3px;
+  font-weight: 300;
+  top: 2%;
+  position: relative;
+  max-width: 95%;
+  height: 96%;
+  min-width: 40%;
+  width: 95%;
+  overflow-y: scroll;
+  min-height: 40%;
+}
+#directionmodal .modal-background .modal h2 {
+  font-size: 31px;
+  line-height: 25px;
+  padding: 0px 0 20px;
+  margin-bottom: 15px;
+  color: #fcb301;
+  font-family: proximanovabold;
+}
+.modalclose {
+    text-align: right;
+    cursor: pointer;
+}
+#directionmodal .modal-background .modal p {
+  font-size: 41px;
+  line-height: 22px;
+  color: #393939;
+  font-family: proximanovabold;
+}
+#directionmodal .modal-background .modal .modal-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+#directionmodal .modal-background .modal .modal-svg rect {
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 778;
+  stroke-dashoffset: 778;
+}
+
+
+
+
+.content .buttonslocation {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+.content .buttonslocation .buttonlocmodal {
+  /* display: inline-block; */
+  /* text-align: center; */
+  /* padding: 0px 0px; */
+  /* margin: 10px 0 0; */
+  /* background: red; */
+  /* font-size: 18px; */
+  /* background-color: transparent; */
+  /* border-radius: 3px; */
+  /* box-shadow: unset; */
+  /* cursor: pointer; */
+}
+.content .buttonslocation .buttonlocmodal:hover {
+  color: white;
+  background: transparent;
+}
+.buttondirmodal:hover {
+  color: white;
+  background: transparent;
+}
+
+/*face book google button*/
+
+.btnfacebook {
+  cursor: pointer !important;
+  -webkit-transition: background 0.3s, border-color 0.3s !important;
+  -moz-transition: background 0.3s, border-color 0.3s !important;
+  transition: background 0.3s, border-color 0.3s !important;
+  position: relative !important;
+  display: block;
+  text-decoration: none !important;
+  border: 2px solid transparent !important;
+  border-radius: 4px !important;
+  width: 100% !important;
+  color: #484848 !important;
+  font-weight: 700 !important;
+  padding-right: 24px !important;
+  padding-left: 24px !important;
+  background: #4568b2 !important;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.btnfacebook span{
+  -webkit-transition: color 0.3s !important;
+  -moz-transition: color 0.3s !important;
+  transition: color 0.3s !important;
+  font-size: 19px !important;
+  line-height: 22px !important;
+  color: #ffffff !important;
+}
+.btngoogle{
+  cursor: pointer !important;
+  -webkit-transition: background 0.3s, border-color 0.3s !important;
+  -moz-transition: background 0.3s, border-color 0.3s !important;
+  transition: background 0.3s, border-color 0.3s !important;
+  position: relative !important;
+  display: block;
+  text-decoration: none !important;
+  border: 2px solid transparent !important;
+  border-radius: 4px !important;
+  width: 100% !important;
+  color: #484848 !important;
+  font-weight: 700 !important;
+  padding-right: 24px !important;
+  padding-left: 24px !important;
+  background: #FF5A5F !important;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+.btngoogle span{
+  -webkit-transition: color 0.3s !important;
+  -moz-transition: color 0.3s !important;
+  transition: color 0.3s !important;
+  font-size: 19px !important;
+  line-height: 22px !important;
+  color: #ffffff !important;
+}
+#signupmodal h2, #signinmodal h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin: 0 0 10px;
+}
+
+
+/*Sign Up Modal*/
+#signupmodal {
+  position: fixed;
+  /* display: table; */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1040;
+}
+#signupmodal.signupmodalopen {
+  transform: scaleY(0.01) scaleX(0);
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#signupmodal.signupmodalopen .modal-background .modal {
+  transform: scale(0);
+  animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#signupmodal.signupmodalopen.out {
+  transform: scale(1);
+  animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#signupmodal.out .modal-background .modal {
+  animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#signupmodal .modal-background {
+  /* display: table-cell; */
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+#signupmodal .modal-background .modal {
+  background: white;
+  padding: 30px;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 300;
+  top: 20%;
+  position: relative;
+  max-width: 95%;
+  height: auto;
+  min-width: 40%;
+  width: 40%;
+  overflow-y: scroll;
+  min-height: 40%;
+}
+#signupmodal .modalclose {
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+}
+#signupmodal .modal-background .modal .modal-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+#signupmodal .modal-background .modal .modal-svg rect {
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 778;
+  stroke-dashoffset: 778;
+}
+
+/*signin Modal*/
+#signinmodal {
+  position: fixed;
+  /* display: table; */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1040;
+}
+#signinmodal.signinmodalopen {
+  transform: scaleY(0.01) scaleX(0);
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#signinmodal.signinmodalopen .modal-background .modal {
+  transform: scale(0);
+  animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#signinmodal.signinmodalopen.out {
+  transform: scale(1);
+  animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#signinmodal.out .modal-background .modal {
+  animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#signinmodal .modal-background {
+  /* display: table-cell; */
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+#signinmodal .modal-background .modal {
+  background: white;
+  padding: 30px;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 300;
+  top: 20%;
+  position: relative;
+  max-width: 95%;
+  height: auto;
+  min-width: 40%;
+  width: 40%;
+  overflow-y: scroll;
+  min-height: 40%;
+}
+#signinmodal .modalclose {
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+}
+#signinmodal .modal-background .modal .modal-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+#signinmodal .modal-background .modal .modal-svg rect {
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 778;
+  stroke-dashoffset: 778;
+}
+
+
+@keyframes unfoldIn {
+  0% {
+    transform: scaleY(0.005) scaleX(0);
+  }
+  50% {
+    transform: scaleY(0.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(1) scaleX(1);
+  }
+}
+@keyframes unfoldOut {
+  0% {
+    transform: scaleY(1) scaleX(1);
+  }
+  50% {
+    transform: scaleY(0.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(0.005) scaleX(0);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+
+@keyframes sketchIn {
+  0% {
+    stroke-dashoffset: 778;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes sketchOut {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 778;
+  }
+}
+@keyframes modalFadeIn {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@keyframes modalFadeOut {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes modalContentFadeIn {
+  0% {
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes modalContentFadeOut {
+  0% {
+    opacity: 1;
+    top: 0px;
+  }
+  100% {
+    opacity: 0;
+    top: -20px;
+  }
+}
+
+
+
+#locationmodal.locationmodalopend {
+  transform: scale(1);
+}
+#locationmodal.locationmodalopend .modal-background {
+  background: rgba(0, 0, 0, 0);
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#locationmodal.locationmodalopend .modal-background .modal {
+  background-color: transparent;
+  animation: modalFadeIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#locationmodal.locationmodalopend .modal-background .modal h2, 
+#locationmodal.locationmodalopend .modal-background .modal p,
+#locationmodal.locationmodalopend .modal-background .modal .modalclose
+ {
+  opacity: 0;
+  position: relative;
+  animation: modalContentFadeIn 0.5s 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#locationmodal.locationmodalopend .modal-background .modal .modal-svg rect {
+  animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#locationmodal.locationmodalopend.out {
+  animation: quickScaleDown 0s .5s linear forwards;
+}
+#locationmodal.locationmodalopend.out .modal-background {
+  animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#locationmodal.locationmodalopend.out .modal-background .modal {
+  animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#locationmodal.locationmodalopend.out .modal-background .modal h2,
+ #locationmodal.locationmodalopend.out .modal-background .modal p ,
+ #locationmodal.locationmodalopend.out .modal-background .modal .modalclose
+ {
+  animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#locationmodal.locationmodalopend.out .modal-background .modal .modal-svg rect {
+  animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
